@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Labib Shahrier Mahir | High-Velocity Full-Stack Engineer</title>
+  <meta name="description" content="High-velocity, precision-engineered web and mobile solutions tailored to your business." />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: '#07090E',
+              card: '#0D111A',
+              border: '#1E2638',
+              accent: '#3B82F6',
+              cyan: '#06B6D4',
+              neon: '#10B981',
+            }
+          },
+          fontFamily: {
+            display: ['"Times New Roman"', 'Times', 'serif'],
+            sans: ['"Times New Roman"', 'Times', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #07090E;
+      color: #F3F4F6;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .text-gradient {
+      background: linear-gradient(135deg, #60A5FA 0%, #06B6D4 50%, #10B981 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .font-mono {
+      font-family: 'Times New Roman', Times, serif !important;
+    }
+
+    .glow-effect {
+      box-shadow: 0 0 50px -10px rgba(59, 130, 246, 0.25);
+    }
+
+    .cyber-grid {
+      background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #0D111A;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #1E2638;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body class="cyber-grid antialiased custom-scrollbar">
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="sticky top-0 z-50 border-b border-brand-border bg-brand-black/80 backdrop-blur-md">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <a href="#home" class="flex items-center gap-3">
+        <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-tr from-blue-600 to-cyan-400 font-display text-lg font-bold text-white shadow-lg shadow-blue-500/30">
+          LSM
+        </span>
+        <span class="font-display text-xl font-extrabold tracking-tight text-white">
+          LS <span class="text-brand-accent">MAHIR</span>
+        </span>
+      </a>
+
+      <ul class="hidden items-center gap-8 font-medium text-gray-400 md:flex text-sm">
+        <li><a href="#about" class="transition hover:text-white">About Me</a></li>
+        <li><a href="#why-me" class="transition hover:text-white">Why Me</a></li>
+        <li><a href="#workflow" class="transition hover:text-white">Execution Standard</a></li>
+        <li><a href="#services" class="transition hover:text-white">Services</a></li>
+      </ul>
+
+      <a href="#contact" class="hidden rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-500/20 transition hover:brightness-110 md:block">
+        Start Project
+      </a>
+    </nav>
+  </header>
+
+  <!-- ============ HERO SECTION ============ -->
+  <section id="home" class="relative overflow-hidden pt-12 pb-20 md:pt-20 md:pb-32">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="grid items-center gap-12 lg:grid-cols-12">
+
+        <!-- Hero Text -->
+        <div class="lg:col-span-7">
+          <div class="inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-1.5 text-xs font-semibold text-blue-400">
+            <span class="h-2 w-2 animate-pulse rounded-full bg-emerald-400"></span>
+            Available For Freelance & Client Tasks
+          </div>
+
+          <h1 class="mt-6 font-display text-4xl font-extrabold leading-none tracking-tight text-white sm:text-6xl lg:text-7xl">
+            You have a problem? <br />
+            <span class="text-gradient">Consider it solved.</span>
+          </h1>
+
+          <p class="mt-6 max-w-2xl text-lg text-gray-400 leading-relaxed">
+            Fast, zero-bloat, and precision-tailored code delivered ahead of deadline. I handle the architecture, logic, and customization so your project is built right the first time.
+          </p>
+
+          <!-- Badges -->
+          <div class="mt-8 flex flex-wrap gap-6 text-sm font-medium text-gray-300">
+            <div class="flex items-center gap-2">
+              <span class="text-emerald-400">✓</span> Rapid Execution Engine
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-emerald-400">✓</span> 100% Tailored Logic
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-emerald-400">✓</span> Zero Spaghetti Code
+            </div>
+          </div>
+
+          <div class="mt-10 flex flex-wrap items-center gap-4">
+            <a href="#contact" class="rounded-xl bg-blue-600 px-8 py-4 font-semibold text-white shadow-xl shadow-blue-600/30 transition hover:bg-blue-500">
+              Get Your Task Built Now
+            </a>
+            <a href="#about" class="rounded-xl border border-brand-border bg-brand-card px-8 py-4 font-semibold text-gray-300 transition hover:bg-brand-border hover:text-white">
+              Meet The Developer
+            </a>
+          </div>
+        </div>
+
+        <!-- Terminal Preview -->
+        <div class="lg:col-span-5">
+          <div class="glow-effect overflow-hidden rounded-2xl border border-brand-border bg-brand-card">
+            <div class="flex items-center justify-between border-b border-brand-border px-4 py-3 bg-brand-black/50">
+              <div class="flex gap-2">
+                <span class="h-3 w-3 rounded-full bg-red-500/80"></span>
+                <span class="h-3 w-3 rounded-full bg-yellow-500/80"></span>
+                <span class="h-3 w-3 rounded-full bg-green-500/80"></span>
+              </div>
+              <span class="text-xs font-mono text-gray-500">execution_engine.js</span>
+            </div>
+
+            <div class="p-6 font-mono text-xs sm:text-sm text-gray-300 space-y-3">
+              <div><span class="text-blue-400">const</span> developer = {</div>
+              <div class="pl-4">name: <span class="text-emerald-400">"Labib Shahrier Mahir"</span>,</div>
+              <div class="pl-4">role: <span class="text-emerald-400">"Accelerated Full-Stack Engineer"</span>,</div>
+              <div class="pl-4">executionSpeed: <span class="text-cyan-400">"Hyper-Fast Custom Build"</span>,</div>
+              <div class="pl-4">qualityControl: <span class="text-emerald-400">"100% Precision Refined"</span>,</div>
+              <div class="pl-4">reworkHeadache: <span class="text-red-400">false</span></div>
+              <div>};</div>
+              <div class="pt-2 text-gray-500">// Direct Execution</div>
+              <div class="text-cyan-400">&gt; developer.solveTask(clientRequirements);</div>
+              <div class="text-emerald-400">[SUCCESS]: Clean, scalable, production-ready solution deployed.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ME SECTION ============ -->
+  <section id="about" class="border-t border-brand-border bg-brand-black py-20">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="grid items-center gap-12 lg:grid-cols-12">
+
+        <!-- Image Box -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative group">
+
+            <!-- Glow -->
+            <div class="absolute -inset-3 rounded-[2rem] bg-gradient-to-tr from-blue-600 via-cyan-400 to-emerald-400 opacity-40 blur-2xl transition duration-500 group-hover:opacity-70"></div>
+
+            <!-- Gradient border frame -->
+            <div class="relative rounded-3xl bg-gradient-to-tr from-blue-600 via-cyan-400 to-emerald-400 p-[3px]">
+              <div class="overflow-hidden rounded-[21px] bg-brand-card">
+
+                <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" class="block w-72 sm:w-80" role="img" aria-label="Anime developer solving problems on a laptop">
+                  <style>
+                    @keyframes fl { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
+                    @keyframes tw { 0%,100% { opacity: .3; } 50% { opacity: 1; } }
+                    .fl1 { animation: fl 3s ease-in-out infinite; }
+                    .fl2 { animation: fl 3.6s ease-in-out infinite .6s; }
+                    .fl3 { animation: fl 4s ease-in-out infinite 1.2s; }
+                    .fl4 { animation: fl 3.3s ease-in-out infinite 1.8s; }
+                    .st  { animation: tw 2s ease-in-out infinite; }
+                    .st2 { animation: tw 2.6s ease-in-out infinite .8s; }
+                  </style>
+
+                  <defs>
+                    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="#0D111A"/>
+                      <stop offset="1" stop-color="#16213A"/>
+                    </linearGradient>
+                    <radialGradient id="aura" cx="50%" cy="50%" r="50%">
+                      <stop offset="0" stop-color="#06B6D4" stop-opacity=".45"/>
+                      <stop offset="1" stop-color="#06B6D4" stop-opacity="0"/>
+                    </radialGradient>
+                    <linearGradient id="hood" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#3B82F6"/>
+                      <stop offset="1" stop-color="#1D4ED8"/>
+                    </linearGradient>
+                  </defs>
+
+                  <!-- Background -->
+                  <rect width="400" height="500" fill="url(#bg)"/>
+                  <circle cx="200" cy="260" r="190" fill="url(#aura)"/>
+
+                  <!-- Stars -->
+                  <g fill="#fff">
+                    <circle class="st" cx="50" cy="40" r="2"/>
+                    <circle class="st2" cx="350" cy="45" r="2.5"/>
+                    <circle class="st2" cx="30" cy="180" r="1.8"/>
+                    <circle class="st" cx="372" cy="230" r="1.8"/>
+                    <circle class="st" cx="320" cy="20" r="1.5"/>
+                  </g>
+
+                  <!-- Hoodie body -->
+                  <path d="M80 500 C80 405 125 362 200 362 C275 362 320 405 320 500 Z" fill="url(#hood)"/>
+                  <path d="M182 372 L178 410 M218 372 L222 410" stroke="#DBEAFE" stroke-width="3" stroke-linecap="round"/>
+
+                  <!-- Neck -->
+                  <rect x="184" y="318" width="32" height="52" rx="10" fill="#F6CFB4"/>
+                  <path d="M184 350 Q200 362 216 350 L216 340 L184 340 Z" fill="#E8B896"/>
+
+                  <!-- Back hair -->
+                  <path d="M132 250 C118 320 140 340 150 330 L150 250 Z" fill="#111827"/>
+                  <path d="M268 250 C282 320 260 340 250 330 L250 250 Z" fill="#111827"/>
+
+                  <!-- Head -->
+                  <ellipse cx="200" cy="268" rx="63" ry="68" fill="#FBDCC4"/>
+                  <ellipse cx="138" cy="275" rx="8" ry="12" fill="#F6CFB4"/>
+                  <ellipse cx="262" cy="275" rx="8" ry="12" fill="#F6CFB4"/>
+
+                  <!-- Hair -->
+                  <path d="M134 262 C124 190 165 168 200 170 C240 168 278 192 266 262 C260 238 254 226 246 220 L236 250 L222 214 L208 246 L192 212 L178 248 L164 218 L152 246 C146 240 140 246 134 262 Z" fill="#111827"/>
+                  <path d="M160 195 C175 183 195 180 212 184" stroke="#3B82F6" stroke-width="5" fill="none" stroke-linecap="round" opacity=".8"/>
+                  <path d="M170 178 L160 148 L190 172 Z M195 172 L200 140 L220 172 Z M222 174 L245 150 L245 182 Z" fill="#111827"/>
+
+                  <!-- Headphones -->
+                  <path d="M136 262 C130 190 270 190 264 262" stroke="#0D111A" stroke-width="9" fill="none" stroke-linecap="round"/>
+                  <rect x="122" y="252" width="20" height="44" rx="10" fill="#10B981"/>
+                  <rect x="258" y="252" width="20" height="44" rx="10" fill="#10B981"/>
+                  <rect x="127" y="262" width="6" height="24" rx="3" fill="#064E3B"/>
+                  <rect x="267" y="262" width="6" height="24" rx="3" fill="#064E3B"/>
+
+                  <!-- Eyes -->
+                  <g>
+                    <ellipse cx="174" cy="278" rx="14" ry="17" fill="#fff"/>
+                    <ellipse cx="226" cy="278" rx="14" ry="17" fill="#fff"/>
+                    <ellipse cx="175" cy="280" rx="10" ry="14" fill="#06B6D4"/>
+                    <ellipse cx="225" cy="280" rx="10" ry="14" fill="#06B6D4"/>
+                    <ellipse cx="175" cy="282" rx="5.5" ry="8" fill="#0B1220"/>
+                    <ellipse cx="225" cy="282" rx="5.5" ry="8" fill="#0B1220"/>
+                    <circle cx="179" cy="273" r="4" fill="#fff"/>
+                    <circle cx="229" cy="273" r="4" fill="#fff"/>
+                    <circle cx="171" cy="288" r="2" fill="#fff"/>
+                    <circle cx="221" cy="288" r="2" fill="#fff"/>
+                    <path d="M159 270 Q174 258 189 270" stroke="#111827" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+                    <path d="M211 270 Q226 258 241 270" stroke="#111827" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+                  </g>
+
+                  <!-- Eyebrows -->
+                  <path d="M160 252 L188 256" stroke="#111827" stroke-width="3.5" stroke-linecap="round"/>
+                  <path d="M240 252 L212 256" stroke="#111827" stroke-width="3.5" stroke-linecap="round"/>
+
+                  <!-- Blush, nose, smile -->
+                  <ellipse cx="160" cy="303" rx="9" ry="4.5" fill="#FB7185" opacity=".45"/>
+                  <ellipse cx="240" cy="303" rx="9" ry="4.5" fill="#FB7185" opacity=".45"/>
+                  <path d="M200 295 L197 302 L203 302" stroke="#E8B896" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M187 310 Q200 324 213 310 Q200 315 187 310 Z" fill="#9F1239" stroke="#7F1D1D" stroke-width="1.5" stroke-linejoin="round"/>
+
+                  <!-- Laptop -->
+                  <ellipse cx="200" cy="470" rx="130" ry="30" fill="#06B6D4" opacity=".2"/>
+                  <path d="M108 405 L292 405 Q300 405 300 413 L300 488 L100 488 L100 413 Q100 405 108 405 Z" fill="#0D111A" stroke="#3B82F6" stroke-width="3"/>
+                  <rect x="88" y="488" width="224" height="12" rx="6" fill="#1E2638" stroke="#3B82F6" stroke-width="2"/>
+                  <circle cx="200" cy="446" r="26" fill="#06B6D4" opacity=".15"/>
+                  <text x="200" y="453" text-anchor="middle" font-size="22" font-weight="700" fill="#06B6D4" font-family="monospace">&lt;/&gt;</text>
+
+                  <!-- Hands -->
+                  <ellipse cx="112" cy="410" rx="15" ry="11" fill="#FBDCC4"/>
+                  <ellipse cx="288" cy="410" rx="15" ry="11" fill="#FBDCC4"/>
+
+                  <!-- Floating chips -->
+                  <g class="fl1">
+                    <rect x="16" y="70" width="118" height="34" rx="10" fill="#0D111A" stroke="#10B981" stroke-width="1.5"/>
+                    <text x="75" y="92" text-anchor="middle" font-size="14" fill="#10B981" font-family="monospace">bug fixed ✓</text>
+                  </g>
+                  <g class="fl2">
+                    <rect x="268" y="105" width="118" height="34" rx="10" fill="#0D111A" stroke="#3B82F6" stroke-width="1.5"/>
+                    <text x="327" y="127" text-anchor="middle" font-size="14" fill="#60A5FA" font-family="monospace">&lt;/&gt; code</text>
+                  </g>
+                  <g class="fl3">
+                    <rect x="14" y="215" width="100" height="34" rx="10" fill="#0D111A" stroke="#06B6D4" stroke-width="1.5"/>
+                    <text x="64" y="237" text-anchor="middle" font-size="14" fill="#06B6D4" font-family="monospace">404 → 200</text>
+                  </g>
+                  <g class="fl4">
+                    <rect x="282" y="325" width="106" height="34" rx="10" fill="#0D111A" stroke="#A855F7" stroke-width="1.5"/>
+                    <text x="335" y="347" text-anchor="middle" font-size="14" fill="#C084FC" font-family="monospace">{ solved }</text>
+                  </g>
+                </svg>
+
+              </div>
+            </div>
+
+            <!-- Floating badge: bottom left -->
+            <div class="absolute -bottom-5 -left-5 flex items-center gap-2 rounded-xl border border-brand-border bg-brand-card/90 px-4 py-2 text-xs font-semibold text-white shadow-xl backdrop-blur">
+              <span class="h-2 w-2 animate-pulse rounded-full bg-emerald-400"></span>
+              Solving problems
+            </div>
+
+            <!-- Floating badge: top right -->
+            <div class="absolute -right-4 -top-4 rounded-xl border border-brand-border bg-brand-card/90 px-4 py-2 text-xs font-semibold text-cyan-400 shadow-xl backdrop-blur">
+              &lt;/&gt; Full-Stack Dev
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Info Text -->
+        <div class="lg:col-span-7">
+          <span class="text-xs font-mono text-blue-400 tracking-wider uppercase">Behind The Code</span>
+          <h2 class="mt-2 font-display text-3xl font-extrabold text-white sm:text-4xl">
+            Hi, I'm Labib Shahrier Mahir
+          </h2>
+          <p class="mt-4 text-gray-400 leading-relaxed">
+            I specialize in turning complex requirements into clean, high-performance web and mobile applications. I don't waste time on slow, legacy development habits—I use modern, high-velocity engineering workflows to design, edit, and deliver exact solutions tailored to client demands.
+          </p>
+
+          <div class="mt-8 grid grid-cols-2 gap-6 border-t border-brand-border pt-6 text-sm">
+            <div>
+              <span class="text-gray-500 block">Focus Areas</span>
+              <span class="font-semibold text-white">Web & Mobile Engineering</span>
+            </div>
+            <div>
+              <span class="text-gray-500 block">Core Advantage</span>
+              <span class="font-semibold text-emerald-400">Hyper-Fast Turnaround</span>
+            </div>
+            <div>
+              <span class="text-gray-500 block">Communication</span>
+              <span class="font-semibold text-white">Clear, Direct & 24h Updates</span>
+            </div>
+            <div>
+              <span class="text-gray-500 block">Quality Standard</span>
+              <span class="font-semibold text-cyan-400">Zero-Bloat Code</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY ME SECTION ============ -->
+  <section id="why-me" class="border-t border-brand-border py-20">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="text-center max-w-3xl mx-auto">
+        <h2 class="font-display text-3xl font-extrabold text-white sm:text-4xl">
+          Why Hire Me Over Traditional Developers?
+        </h2>
+        <p class="mt-4 text-gray-400">
+          I combine cutting-edge rapid development tools with hands-on architecture to ensure your project is built faster and without errors.
+        </p>
+      </div>
+
+      <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="rounded-2xl border border-brand-border bg-brand-card p-8">
+          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-500/10 text-blue-400 font-bold text-xl">⚡</div>
+          <h3 class="mt-6 font-display text-xl font-bold text-white">Ultra-Fast Execution</h3>
+          <p class="mt-3 text-sm text-gray-400 leading-relaxed">
+            No waiting weeks for simple features. I deliver working logic and UI in hours and days, keeping your product ahead of schedule.
+          </p>
+        </div>
+
+        <div class="rounded-2xl border border-brand-border bg-brand-card p-8">
+          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-500/10 text-cyan-400 font-bold text-xl">🎯</div>
+          <h3 class="mt-6 font-display text-xl font-bold text-white">100% Custom Tailored</h3>
+          <p class="mt-3 text-sm text-gray-400 leading-relaxed">
+            Every feature, button, and database query is hand-tuned and customized specifically to your business goals and customer needs.
+          </p>
+        </div>
+
+        <div class="rounded-2xl border border-brand-border bg-brand-card p-8">
+          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-400 font-bold text-xl">🛡️</div>
+          <h3 class="mt-6 font-display text-xl font-bold text-white">Scalable & Clean</h3>
+          <p class="mt-3 text-sm text-gray-400 leading-relaxed">
+            Clean code structure that doesn't break. Easy to maintain, scale, and hand off with full documentation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORKFLOW ============ -->
+  <section id="workflow" class="border-t border-brand-border bg-brand-black py-20">
+    <div class="mx-auto max-w-7xl px-6">
+      <h2 class="font-display text-3xl font-extrabold text-white text-center sm:text-4xl">
+        My Fixed Execution Workflow
+      </h2>
+      <p class="mt-2 text-center text-sm text-gray-400">
+        This is the proven 4-step method I use to deliver projects flawlessly.
+      </p>
+
+      <div class="mt-16 grid gap-6 md:grid-cols-4">
+        <div class="rounded-2xl border border-brand-border bg-brand-card p-6">
+          <span class="text-xs font-mono text-blue-400">STEP 01</span>
+          <h4 class="mt-2 text-lg font-bold text-white">Requirement Mapping</h4>
+          <p class="mt-2 text-xs text-gray-400">I analyze your specific demand, features, and edge cases to create a exact build blueprint.</p>
+        </div>
+
+        <div class="rounded-2xl border border-brand-border bg-brand-card p-6">
+          <span class="text-xs font-mono text-cyan-400">STEP 02</span>
+          <h4 class="mt-2 text-lg font-bold text-white">Accelerated Build</h4>
+          <p class="mt-2 text-xs text-gray-400">I utilize next-gen development tools to rapidly engineer the main system architecture.</p>
+        </div>
+
+        <div class="rounded-2xl border border-brand-border bg-brand-card p-6">
+          <span class="text-xs font-mono text-emerald-400">STEP 03</span>
+          <h4 class="mt-2 text-lg font-bold text-white">Custom Refinement</h4>
+          <p class="mt-2 text-xs text-gray-400">I hand-edit, refine UI/UX, and adjust logic line-by-line based on your exact feedback.</p>
+        </div>
+
+        <div class="rounded-2xl border border-brand-border bg-brand-card p-6">
+          <span class="text-xs font-mono text-purple-400">STEP 04</span>
+          <h4 class="mt-2 text-lg font-bold text-white">Audit & Delivery</h4>
+          <p class="mt-2 text-xs text-gray-400">Rigorous bug testing, performance optimization, and final deployment to production.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services" class="border-t border-brand-border py-20">
+    <div class="mx-auto max-w-7xl px-6">
+      <h2 class="font-display text-3xl font-extrabold text-white sm:text-4xl">
+        Services Ready For Deployment
+      </h2>
+
+      <div class="mt-12 grid gap-8 md:grid-cols-2">
+        <div class="rounded-2xl border border-brand-border bg-brand-card p-8">
+          <h3 class="font-display text-2xl font-bold text-white">Full-Stack Web Systems</h3>
+          <p class="mt-3 text-gray-400">High-performance web applications, landing pages, and web tools built for speed and responsiveness.</p>
+          <div class="mt-6 flex flex-wrap gap-2 text-xs font-mono text-blue-400">
+            <span class="rounded-md bg-blue-500/10 px-3 py-1">React</span>
+            <span class="rounded-md bg-blue-500/10 px-3 py-1">Tailwind CSS</span>
+            <span class="rounded-md bg-blue-500/10 px-3 py-1">Node.js</span>
+            <span class="rounded-md bg-blue-500/10 px-3 py-1">Python</span>
+          </div>
+        </div>
+
+        <div class="rounded-2xl border border-brand-border bg-brand-card p-8">
+          <h3 class="font-display text-2xl font-bold text-white">Cross-Platform Mobile Apps</h3>
+          <p class="mt-3 text-gray-400">Smooth, native-feeling mobile applications for iOS & Android from a single optimized codebase.</p>
+          <div class="mt-6 flex flex-wrap gap-2 text-xs font-mono text-cyan-400">
+            <span class="rounded-md bg-cyan-500/10 px-3 py-1">Flutter</span>
+            <span class="rounded-md bg-cyan-500/10 px-3 py-1">Dart</span>
+            <span class="rounded-md bg-cyan-500/10 px-3 py-1">Firebase</span>
+          </div>
+        </div>
+
+        <div class="rounded-2xl border border-brand-border bg-brand-card p-8">
+          <h3 class="font-display text-2xl font-bold text-white">Code Customization & Refactoring</h3>
+          <p class="mt-3 text-gray-400">Need specific changes or bug fixes in your current codebase? I clean up, fix errors, and add custom features.</p>
+          <div class="mt-6 flex flex-wrap gap-2 text-xs font-mono text-emerald-400">
+            <span class="rounded-md bg-emerald-500/10 px-3 py-1">Bug Fixes</span>
+            <span class="rounded-md bg-emerald-500/10 px-3 py-1">Code Refactoring</span>
+            <span class="rounded-md bg-emerald-500/10 px-3 py-1">API Integration</span>
+          </div>
+        </div>
+
+        <div class="rounded-2xl border border-brand-border bg-brand-card p-8">
+          <h3 class="font-display text-2xl font-bold text-white">Figma to Code Implementation</h3>
+          <p class="mt-3 text-gray-400">Converting UI designs and Figma mockups into interactive, pixel-perfect frontend code.</p>
+          <div class="mt-6 flex flex-wrap gap-2 text-xs font-mono text-purple-400">
+            <span class="rounded-md bg-purple-500/10 px-3 py-1">Figma Conversion</span>
+            <span class="rounded-md bg-purple-500/10 px-3 py-1">Responsive UI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT SECTION ============ -->
+  <section id="contact" class="border-t border-brand-border bg-brand-black py-20">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="grid gap-12 lg:grid-cols-12">
+
+        <div class="lg:col-span-5">
+          <h2 class="font-display text-3xl font-extrabold text-white sm:text-4xl">
+            Tell Me About Your Project.
+          </h2>
+          <p class="mt-4 text-gray-400 leading-relaxed">
+            Send over your project details or task requirements. I will review it and reply within 24 hours with a clear plan and timeline.
+          </p>
+
+          <div class="mt-8 space-y-4 text-sm text-gray-300">
+            <div>
+              <span class="text-gray-500 block">Direct Email:</span>
+              <a href="mailto:lshahriermahir@gmail.com" class="font-mono text-blue-400 underline">lshahriermahir@gmail.com</a>
+            </div>
+            <div>
+              <span class="text-gray-500 block">GitHub:</span>
+              <a href="https://github.com/lsmahir" target="_blank" class="font-mono text-blue-400 underline">github.com/lsmahir</a>
+            </div>
+            <div>
+  <span class="text-gray-500 block">LinkedIn:</span>
+  <a href="https://www.linkedin.com/in/ls-mahir" target="_blank" rel="noopener noreferrer" class="font-mono text-blue-400 underline">linkedin.com/in/ls-mahir</a>
+</div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <form id="contactForm" class="rounded-2xl border border-brand-border bg-brand-card p-8">
+            <div class="grid gap-6 sm:grid-cols-2">
+              <div>
+                <label class="block text-sm font-semibold text-gray-300">Your Name</label>
+                <input type="text" required placeholder="Jane Doe" class="mt-2 w-full rounded-xl border border-brand-border bg-brand-black px-4 py-3 text-gray-200 outline-none focus:border-blue-500" />
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-gray-300">Email Address</label>
+                <input type="email" required placeholder="jane@company.com" class="mt-2 w-full rounded-xl border border-brand-border bg-brand-black px-4 py-3 text-gray-200 outline-none focus:border-blue-500" />
+              </div>
+            </div>
+
+            <div class="mt-6">
+              <label class="block text-sm font-semibold text-gray-300">Project / Task Details</label>
+              <textarea rows="4" required placeholder="Describe what you need done..." class="mt-2 w-full rounded-xl border border-brand-border bg-brand-black px-4 py-3 text-gray-200 outline-none focus:border-blue-500"></textarea>
+            </div>
+
+            <button type="submit" class="mt-6 w-full rounded-xl bg-blue-600 py-4 font-semibold text-white shadow-xl shadow-blue-600/30 transition hover:bg-blue-500">
+              Send Requirement
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-brand-border py-8 text-center text-xs text-gray-500">
+    <p>&copy; <span id="year"></span> Labib Shahrier Mahir. Engineered for speed and precision.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thank you! Your task details have been sent. I will get back to you within 24 hours.');
+    });
+  </script>
+</body>
+</html>
